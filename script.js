@@ -26,7 +26,6 @@ function showMovies(movies) {
 
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
-    movieEl.id = "movie";
 
     movieEl.innerHTML = `
             <img src="${IMG_PATH + poster_path}" alt="${title}">
@@ -71,10 +70,8 @@ form.addEventListener("submit", (e) => {
 
 const darkMode = document.getElementById("darkMode");
 const navbar = document.getElementById("navbar");
-const movie = document.getElementById("movie");
 
 darkMode.addEventListener("click", () => {
   main.classList.toggle("active-main");
   navbar.classList.toggle("active-navbar");
-  movie.classList.toggle("active-movie");
 });
