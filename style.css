@@ -5,24 +5,64 @@
   --secondary-color: #393e46;
   --yellow-color: #ffd369;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--yellow-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
 }
 
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  background: url("wallpaperflare.com_wallpaper\ \(4\).jpg");
-
-  object-fit: cover;
-  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  scroll-margin-inline-start: 10rem;
+}
+a {
+  text-decoration: none;
 }
 
 header {
   padding: 1rem;
   display: flex;
-  justify-content: flex-end;
-  background-color: var(--primary-color);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  z-index: 999;
+  position: fixed;
+  overflow: hidden;
+}
+header h3 {
+  color: var(--yellow-color);
+  margin: 0;
+  font-size: 2rem;
+  padding-left: 3rem;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  margin: left 2rem;
+  padding: 1rem;
+  font-size: 20px;
+  border: none;
 }
 
 .search {
@@ -42,12 +82,15 @@ header {
 
 .search:focus {
   outline: none;
-  background-color: var(--yellow-color);
+  color: var(--yellow-color);
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
 }
 
 .movie {
@@ -89,10 +132,11 @@ main {
   color: lightgreen;
 }
 .movie-info span.orange {
-  color: lightgreen;
+  color: orange;
 }
+
 .movie-info span.red {
-  color: lightgreen;
+  color: red;
 }
 
 .overview {
@@ -105,8 +149,22 @@ main {
   right: 0;
   max-height: 100%;
   transform: translateY(101%);
+  transition: 0.5s;
+  cursor: context-menu;
 }
 
 .movie:hover .overview {
   transform: translateY(0);
+}
+
+.active-main {
+  background-color: #eaeaea;
+}
+
+.active-navbar {
+  background-color: #b2b2b2;
+}
+
+.active-movie {
+  background-color: #b2b2b2;
 }
