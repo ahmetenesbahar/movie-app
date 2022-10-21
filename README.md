@@ -15,8 +15,10 @@ Klonlama işleminin ardından live server açarak kodu önizleyebilirsiniz.
 ## Ekran Görüntüleri
 
 <div>
-<img src="screenshots/Dark_Theme.png">
-<img src="">
+<img  style="width: 48%;" src="https://github.com/ahmetenesbahar/movie-app/blob/main/screenshots/Dark_Theme.png">
+<img  style="width: 48%;" src="https://github.com/ahmetenesbahar/movie-app/blob/main/screenshots/Light_Theme.png">
+<img  style="width: 48%;" src="https://github.com/ahmetenesbahar/movie-app/blob/main/screenshots/Search.png">
+<img  style="width: 48%;" src="https://github.com/ahmetenesbahar/movie-app/blob/main/screenshots/Dark_Theme.png">
 
 </div>
 

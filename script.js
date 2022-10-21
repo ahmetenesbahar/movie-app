@@ -28,7 +28,9 @@ function showMovies(movies) {
     movieEl.classList.add("movie");
 
     movieEl.innerHTML = `
-            <img src="${IMG_PATH + poster_path}" alt="${title}">
+            <img src="${
+              IMG_PATH + poster_path
+            }" alt="${title}" onerror="this.src='Satuhaz_uyarı.png'">
             <div class="movie-info">
           <h3>${title}</h3>
           <span class="${getClassByRate(vote_average)}">${vote_average}</span>
@@ -75,3 +77,9 @@ darkMode.addEventListener("click", () => {
   main.classList.toggle("active-main");
   navbar.classList.toggle("active-navbar");
 });
+
+//Refresh page
+
+const refresh = document.getElementById("refresh");
+
+refresh.window.location.reload();

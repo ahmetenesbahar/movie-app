@@ -51,8 +51,9 @@ header h3 {
   color: var(--yellow-color);
   margin: 0;
   font-size: 2rem;
-  padding-left: 3rem;
+  padding: 0 3rem;
   cursor: pointer;
+  width: 100%;
 }
 
 .dark-mode {
@@ -90,11 +91,12 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 5rem 2rem;
+  padding: 6rem 3.5rem;
 }
 
 .movie {
   width: 300px;
+  height: 550px;
   margin: 1rem;
   background-color: var(--yellow-color);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
@@ -119,6 +121,7 @@ main {
 
 .movie-info h3 {
   margin-top: 0;
+  font-size: 1rem;
 }
 
 .movie-info span {
@@ -126,8 +129,12 @@ main {
   padding: 0.25rem 0.8rem;
   border-radius: 16px;
   width: 64px;
+  position: absolute;
+  right: 0;
+  top: 480px;
   text-align: center;
   font-weight: bold;
+  margin: 1rem;
 }
 
 .movie-info span.green {
@@ -169,4 +176,146 @@ main {
 
 .active-movie {
   background-color: #b2b2b2;
+}
+
+.up {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--yellow-color);
+}
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    padding-top: 1rem;
+  }
+  .search {
+    background-color: transparent;
+    border: 3px solid var(--yellow-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--yellow-color);
+    width: 391px;
+  }
+  main {
+    padding: 2rem 3.5rem;
+  }
+  .dark-mode {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--yellow-color);
+  }
+}
+
+@media (max-width: 520px) {
+  header h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+  .search {
+    background-color: transparent;
+    border: 3px solid var(--yellow-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--yellow-color);
+    width: 391px;
+  }
+  main {
+    padding: 2rem 3.5rem;
+  }
+  a,
+  i {
+    font-size: 20px;
+  }
+  .dark-mode {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--yellow-color);
+  }
+  .up {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--yellow-color);
+  }
+
+  .movie {
+    width: 200px;
+    height: 300px;
+    font-size: 12px;
+  }
+  .overview {
+    text-align: center;
+    padding: 0.3rem;
+  }
+  .movie-info {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .movie {
+    font-size: 10px;
+  }
 }
