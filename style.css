@@ -320,7 +320,7 @@ main {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 345px) {
   .movie {
      width: 176px;
     height: 264px;
