@@ -319,3 +319,11 @@ main {
     font-size: 10px;
   }
 }
+
+@media (max-width: 380px) {
+  .movie {
+     width: 176px;
+    height: 264px;
+  }
+}
+
