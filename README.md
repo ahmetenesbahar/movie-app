@@ -1,6 +1,6 @@
 ## Movie App
 
-Bu proje HTML CSS JavaScirpt kullanarak geliştirdiğim bir film sitesi uygulamasıdır. Uygulamada istediğiniz filmi aratabilir özetine, IMDB'sine bakabilirsiniz.
+Bu proje HTML CSS JavaScript  kullanarak geliştirdiğim bir film sitesi uygulamasıdır. Uygulamada istediğiniz filmi aratabilir özetine, IMDB'sine bakabilirsiniz.
 
 ## Kurulum
 
